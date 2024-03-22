@@ -87,7 +87,7 @@ if activate:
     search = arxiv.Search(id_list=[input])
 else:
     search = arxiv.Search(
-    query = f"cat:{st.text_input(label='',value=search_value,placeholder='Search for a subject')}",
+    query = st.text_input(label='',value=search_value,placeholder='Search for a subject'),
     max_results = 5,
     sort_by = arxiv.SortCriterion.SubmittedDate
     )
