@@ -4,7 +4,7 @@ import streamlit as st
 
 endpoint = "https://api.openai.com/v1/chat/completions" 
 api_key = st.secrets['OPENAI_KEY']
-model = "gpt-4-1106-preview"
+model = "gpt-4-0125-preview"
 openai = OpenAI(api_key=api_key)
 
 st.markdown("""
